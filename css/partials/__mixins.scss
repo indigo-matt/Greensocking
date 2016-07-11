@@ -249,21 +249,21 @@
 
 
 /** Media Query Mixins, Breakpoints **/
+/** Media Query Mixins, Breakpoints **/
 @mixin respond-to($name) {
   @if $name == "mobile" {
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 697px) {
       @content;
     }
   }
-  @else if $name == "tablet" {
-    @media all and (max-width: 1024px) {
+  @else if $name == "laptop" {
+    @media all and (min-width: 698px) and (max-width: 1440px) {
       @content;
     }
   }
-  @else if $name == "desktop" {
-    @media all and (min-width: 1025px) {
+  @else if $name == "bigger" {
+    @media all and (min-width: 1441px) {
       @content;
     }
   }
 }
-

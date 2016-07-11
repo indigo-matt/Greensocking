@@ -6,17 +6,56 @@
   box-sizing: border-box;
 }
 
-html, 
-body { 
-  height: 100%; 
+html,
+body {
   font: 17px/1.4 'Segoe UI', 'Segoe', Verdana, Arial, sans-serif;
 }
 
 body {
-  background: #fff;
+  background: #eee;
+  color: #fff;
+  font-size: 20px;
 }
 
-.wrapper {                        // Wrapper around all block content
-
+/////////////////////////////////////////////////////////////////////////////////////
+body {
+  background-color: #000;
 }
 
+#demo {
+  margin: 150px auto;
+  width: 692px;
+  height: 170px;
+  background-color: #333;
+  position: relative;
+}
+
+#logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: salmon;
+  top: 100px;
+}
+
+#bar {
+  position: absolute;
+  width: 0;
+  height: 10px;
+  top: 0;
+  background: peachpuff;
+}
+
+#list {
+  list-style-type: none;
+  width: 150px;
+  margin: 50px auto;
+
+  li {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    background: #222;
+    scale: 1;
+  }
+}
