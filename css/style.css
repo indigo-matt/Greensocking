@@ -1,0 +1,89 @@
+body {
+	background: #aaa;
+	color: #fff;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+.wrapper div {
+	position: absolute;
+	border: 1px dashed #fff;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+.step1 { left: 0px; top: 0px; }
+.step2 { left: 1000px; top: 0px; }
+.step3 { left: 1000px; top: 1000px; }
+.step4 { left: 2000px; top: 1000px; }
+.step5 { left: 2000px; top: 2000px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hiding timeline, showing path */
+.settings,
+nav {
+	display: none;
+}
+
+/*
+	a, a:visited {
+		color: white;
+		text-decoration: none;
+	}
+
+	.settings, 
+	nav {
+		position: fixed;
+		z-index: 9999999;
+		top: 0;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 20px;
+	}
+
+	nav {
+		left: 0;
+	}
+
+	nav ul {
+		margin: 0;
+	}
+
+	nav ul li {
+		list-style-type: none;
+		margin: 5px 0 5px -35px;
+		border-radius: 4px;
+		background: rgba(10,10,10, 0.5);
+	}
+
+	nav ul li:hover {
+		background: rgba(10,10,10, 0.2);	
+	}
+
+	nav ul li a {
+		display: block;
+		height: 20px;
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.sp-canvas {
+		display: none;
+	}
+*/
