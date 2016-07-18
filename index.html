@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	<title>AOS Plugin testing</title>
+	<title>Scrolltrigger testing</title>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css" /> 
 </head>
@@ -10,11 +10,6 @@
 
 
 <div class="wrapper">
-	
-	<div class="test" id="test1">test</div>
-	<div class="test" id="test2">test</div>
-	<div class="test" id="test3">test</div>
-	<div class="test" id="test4">test</div>	
 	
 	<section class="filler filler--1">
 		.filler--1
@@ -24,7 +19,7 @@
 		.filler--2
 	</section>
 
-	<section class="filler filler--2">
+	<section class="filler filler--3" data-scroll="offset(0,250px), once">
 		.filler--3
 	</section>
 
@@ -40,33 +35,11 @@
 		.filler--6
 	</section>
 
-	<section  class="showing-first"
-						data-aos-anchor="#test1"
-						data-aos-anchor-placement="top-top"
-						data-aos="fade-left" 
-		  			data-aos-offset="0" 
-		  			data-aos-easing="ease-in-out-back" 
-		  			data-aos-duration="900"
-	>
-
-	</section>
-
-	<section  class="showing-second"
-						data-aos-anchor="#test2"
-						data-aos-anchor-placement="top-top"
-						data-aos="fade-right" 
-		  			data-aos-offset="0" 
-		  			data-aos-easing="ease-in-out-back" 
-		  			data-aos-duration="600"
-	>
-
-	</section>
-
 </div>
 
 
 	<script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="js/vendor/aos.js"></script>	
+  <script type="text/javascript" src="js/vendor/ScrollTrigger.min.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 // AOS Library
 @import "partials/__mixins.scss";
-@import "partials/__aos.scss";
+@import "partials/__scrolltrigger.scss";
 
 
 // Standard CSS
@@ -17,67 +17,24 @@ html, body {
   border: 1px dashed #eee;
   position: relative;
   height: 3000px; 
-  background: #eee;
+  background: #fff;
   margin: 0px auto;
 }
 
 .filler {
   padding: 15px;
   margin: 15px 0;
-  background: #e8e8e8;
+  background: #aaa;
   height: 300px;
 }
 
-.section1 {
-  @include flexbox();
-  @include flex-flow(row wrap);
-  margin: 50vh 0 0 0;
-  .aaa {
-    @include flex(1 0 auto);
-    background: #eee;
-    width: 50%;
-    border: 2px solid #000;
-  }
 
-  .bbb {
-    @include flex(1 0 auto);
-    background: #ccc;
-    width: 300px;
-    border: 2px dashed #000;
-    margin: 25px;
-  }
+.invisible {
+    transition: opacity 1.5s ease;
+    opacity: 0.0;
 }
 
-.test {
-  background: red;
-  height: 2px;
-  overflow: hidden;
-}
-
-#test1 {
-  position: absolute;
-  top: 300px;
-}
-
-#test2 {
-  position: absolute;
-  top: 500px;
-}
-
-.showing-first {
-  height: 300px;
-  width: 300px;
-  background: blue;
-  position: absolute;
-  left: 50px;
-  top: 800px;
-}
-
-.showing-second {
-  width: 300px;
-  height: 300px;
-  background: red;
-  position: absolute;
-  right: 50px;
-  top: 700px;
+.visible {
+    transition: opacity 1.5s ease;
+    opacity: 1.0;
 }
