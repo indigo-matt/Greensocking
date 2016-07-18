@@ -78,21 +78,32 @@ html, body {
   padding: 0; }
 
 .wrapper {
-  margin: 0 auto;
+  margin: 0 auto 0;
   border: 1px dashed #eee;
   position: relative;
   height: 3000px;
-  background: #fff;
-  margin: 0px auto; }
+  background: #fff; }
 
 .filler {
   padding: 15px;
   margin: 15px 0;
   background: #aaa;
-  height: 300px; }
+  height: 300px;
+  border: 1px solid #000;
+  filter: alpha(opactiy=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5; }
+  .filler--1 {
+    margin: 15px; }
+  .filler--2 {
+    margin: 50px; }
+  .filler--3 {
+    margin: 0 150px; }
 
 .invisible {
-  transition: opacity 1.5s ease;
+  transition: opacity 200s ease;
   opacity: 0.0; }
 
 .visible {

@@ -2,44 +2,45 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	<title>Scrolltrigger testing</title>
+	<title>Scrolltrigger & Rellax testing</title>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css" /> 
 </head>
 <body>
 
 
-<div class="wrapper">
-	
-	<section class="filler filler--1">
-		.filler--1
-	</section>
+	<div class="wrapper">
+		
+		<section class="rellax filler filler--1" data-rellax-speed="2">
+			.filler--1
+		</section>
 
-	<section class="filler filler--2">
-		.filler--2
-	</section>
+		<section class="rellax filler filler--2" data-rellax-speed="3" data-scroll="offset(0,250), once">
+			.filler--2
+		</section>
 
-	<section class="filler filler--3" data-scroll="offset(0,250px), once">
-		.filler--3
-	</section>
+		<section class="rellax filler filler--3" >
+			.filler--3
+		</section>
 
-	<section class="filler filler--4">
-		.filler--4
-	</section>
+		<section class="rellax filler filler--4" data-rellax-speed="4" data-scroll="centerVertical">
+			.filler--4
+		</section>
 
-	<section class="filler filler--5">
-		.filler--5
-	</section>
+		<section class="rellax filler filler--5">
+			.filler--5
+		</section>
 
-	<section class="filler filler--6">
-		.filler--6
-	</section>
+		<section class="rellax filler filler--6" data-rellax-speed="7">
+			.filler--6
+		</section>
 
-</div>
+	</div>
 
 
 	<script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="js/vendor/ScrollTrigger.min.js"></script>	
+  <script type="text/javascript" src="js/vendor/rellax.min.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
