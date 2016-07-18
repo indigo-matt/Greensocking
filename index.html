@@ -2,51 +2,71 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	<title>scrollpathing</title>
+	<title>AOS Plugin testing</title>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css" /> 
 </head>
 <body>
 
 
-
-	<section id="one">
-		<div class=“inner”>
-		  <h1>1 Slide Title</h1>
-		  <p>Slide description text goes here.</p>
-		</div>
+<div class="wrapper">
+	
+	<div class="test" id="test1">test</div>
+	<div class="test" id="test2">test</div>
+	<div class="test" id="test3">test</div>
+	<div class="test" id="test4">test</div>	
+	
+	<section class="filler filler--1">
+		.filler--1
 	</section>
 
-	<section id="two">
-		<div class=“inner”>
-		  <h1>2 Slide Title</h1>
-		  <p>Slide description text goes here.</p>
-		</div>
+	<section class="filler filler--2">
+		.filler--2
 	</section>
 
-	<section id="three">
-		<div class=“inner”>
-		  <h1>3 Slide Title</h1>
-		  <p>Slide description text goes here.</p>
-		</div>
+	<section class="filler filler--2">
+		.filler--3
 	</section>
 
-	<section id="four">
-		<div class=“inner”>
-		  <h1>4 Slide Title</h1>
-		  <p>Slide description text goes here.</p>
-		</div>
+	<section class="filler filler--4">
+		.filler--4
 	</section>
 
+	<section class="filler filler--5">
+		.filler--5
+	</section>
+
+	<section class="filler filler--6">
+		.filler--6
+	</section>
+
+	<section  class="showing-first"
+						data-aos-anchor="#test1"
+						data-aos-anchor-placement="top-top"
+						data-aos="fade-left" 
+		  			data-aos-offset="0" 
+		  			data-aos-easing="ease-in-out-back" 
+		  			data-aos-duration="900"
+	>
+
+	</section>
+
+	<section  class="showing-second"
+						data-aos-anchor="#test2"
+						data-aos-anchor-placement="top-top"
+						data-aos="fade-right" 
+		  			data-aos-offset="0" 
+		  			data-aos-easing="ease-in-out-back" 
+		  			data-aos-duration="600"
+	>
+
+	</section>
+
+</div>
 
 
-
-	<script type="text/javascript" src="js/vendor/ScrollMagic.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
-	
-	<script type="text/javascript" src="js/vendor/animation.gsap.min.js"></script>
-	<script type="text/javascript" src="js/vendor/debug.addIndicators.min.js"></script>
-	
+  <script type="text/javascript" src="js/vendor/aos.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
