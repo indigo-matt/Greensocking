@@ -1,48 +1,14 @@
-(function($) {
+// Controller
+var controller = new ScrollMagic();
  
-  // Init ScrollMagic
-  var ctrl = new ScrollMagic.Controller({
-
-  	// Setting a trigger when it leaves
-	  globalSceneOptions: {
-
-	  	// Tells it when to trigger, could be onEnter or onCenter
-      triggerHook: 'onLeave'
-    }
-  });
+// 2. Curtain Timeline
+var tlCurtain = new TimelineMax();
+    tlCurtain.set($curtain, {yPercent: -100})
+    .to($curtain, 0.3, {yPercent: 0, ease:Power4.easeOut})
+    .to([tomatoLeft2, tomatoLeaves2, tomatoRight2, letters2, bracketRight2, bracketLeft2], 0.01, {fill: "#707070"})
+    .to($curtain, 0.3, {yPercent: -100, ease:Power4.easeOut})
  
-
-
-	// Create scene
-	$("section").each(function() {
-
-		// Define the var as the #id of each <section> being looped through
-    var name = $(this).attr('id');
-
-    new ScrollMagic.Scene({
-
-    	// defines 'this' <section> as a scene
-      triggerElement: this 
-    })
-    .setPin(this)  		// Pins 'this' <section> to the top of the browser
-    .addIndicators() 	// Set indicator for 'this'
-    .loglevel(3)			// Enabling logging
-    .addTo(ctrl);			// Adds each scene to the 'ctrl' controllor
-	});
-
-
-	// Get the window height into this var
-	var wh = window.innerHeight;
-
-	new ScrollMagic.Scene({
-	  offset: wh*3	// Multiplying the window height by 3
-	})
-	
-	.setClassToggle("section#four", "is-active") // Adds a class when active.
-	
-	.addTo(ctrl);
-	
-
-
-
-})(jQuery);
+// 2. Curtain Scene
+var scene = new ScrollScene({triggerElement: "#screen2 .imacInner"})
+    .addTo(controller)
+    .setTween(tlCurtain);
